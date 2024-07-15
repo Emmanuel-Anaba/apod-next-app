@@ -1,5 +1,6 @@
+import DataProvider from "./context";
+
 export default function Home() {
-  return (
-    <div>Homepage</div>
-  )
+  const data = {};
+  return <DataProvider data={data}>HomePage</DataProvider>;
 }
