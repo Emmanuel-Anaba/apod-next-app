@@ -1,3 +1,5 @@
+import Mainpage from "./components/mainpage";
+import Sidebar from "./components/sidebar";
 import DataProvider from "./context";
 
 export default function Home() {
@@ -13,5 +15,10 @@ export default function Home() {
     url: "https://apod.nasa.gov/apod/image/2407/NGC5139_Stein_a1024.jpg",
   };
 
-  return <DataProvider data={data}>HomePage</DataProvider>;
+  return (
+    <DataProvider data={data}>
+      <Mainpage />
+      <Sidebar />
+    </DataProvider>
+  );
 }

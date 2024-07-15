@@ -36,3 +36,39 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+main {
+  @apply h-full relative;
+  div {
+    @apply absolute bottom-4 left-4;
+  }
+  p {
+    @apply text-xl;
+  }
+  svg {
+    @apply text-3xl absolute bottom-4 right-4;
+  }
+}
+
+.overlay {
+  @apply fixed inset-0 bg-zinc-800 opacity-40;
+}
+
+aside {
+  @apply h-full fixed w-72 md:w-[40%] inset-y-0 duration-500 bg-zinc-800 overflow-y-scroll p-4 grid gap-4;
+  svg {
+    @apply text-3xl mt-auto mr-auto;
+  }
+  span {
+    @apply text-xl font-thin;
+  }
+  p {
+    @apply text-lg;
+  }
+}
+::-webkit-scrollbar {
+  @apply w-2 bg-zinc-400;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-full;
+}
