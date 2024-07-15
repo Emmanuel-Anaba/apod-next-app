@@ -4,7 +4,8 @@ import { RiInformation2Line } from "react-icons/ri";
 import { useData } from "../context";
 
 export default function Mainpage() {
-  const data = useData();
+  const { data, toggleSidebar } = useData();
+  
   return (
     <main>
       <Image
@@ -18,7 +19,7 @@ export default function Mainpage() {
         <h1>{data?.title}</h1>
         <p>&copy; {data?.copyright}</p>
       </div>
-      <RiInformation2Line role="button" />;
+      <RiInformation2Line role="button" onClick={toggleSidebar} />;
     </main>
   );
 }
