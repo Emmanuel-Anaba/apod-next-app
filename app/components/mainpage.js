@@ -5,12 +5,12 @@ import { useData } from "../context";
 
 export default function Mainpage() {
   const { data, toggleSidebar } = useData();
-  
+
   return (
     <main>
       <Image
         priority
-        className="bg-zinc-700 object-cover"
+        className="bg-zinc-200 dark:bg-zinc-700 object-cover"
         src={data?.hdurl}
         alt="See explanation"
         fill

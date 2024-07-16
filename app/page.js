@@ -1,3 +1,4 @@
+import DarkModeToggler from "./components/darkModeToggler";
 import DateInput from "./components/dateInput";
 import Mainpage from "./components/mainpage";
 import Sidebar from "./components/sidebar";
@@ -13,6 +14,7 @@ export default async function Home({ searchParams }) {
 
   return (
     <DataProvider data={data}>
+      <DarkModeToggler />
       <DateInput />
       <Mainpage />
       <Sidebar />
