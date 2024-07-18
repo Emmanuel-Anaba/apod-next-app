@@ -7,6 +7,10 @@ export const metadata = {
   title: "APOD - Astronomy Picture Of The Day",
   description:
     "Explore breathtaking images of the cosmos with our Astronomy Picture of the Day app. Discover the wonders of the universe with new photos and detailed explanations daily.",
+  icons: {
+    icon: "./favicon.png",
+    apple: "./favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
