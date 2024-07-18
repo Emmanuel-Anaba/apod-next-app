@@ -8,4 +8,4 @@ The APOD App is a web application designed to showcase NASA's Astronomy Picture 
 - **Detailed Information**: Provides descriptions and explanations of each picture, including its significance, date, and credits to NASA and the photographers.
 - **Date Selection**: Allows users to explore past Astronomy Pictures from any specific date since June 16, 1995, when the APOD service began.
 
-![image](./public/readme-img.png)
+![readme-img](https://github.com/user-attachments/assets/d2a172cd-0961-44e8-8fda-b867321ba4e8)
